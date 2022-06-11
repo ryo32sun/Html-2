@@ -20,6 +20,8 @@ main {
 .main-content {
   width: 300px;
   background-color: #EEE;
+  position: relative;
+  padding: 10px;
 }
 
 .main-center {
@@ -29,14 +31,16 @@ main {
 .step {
   background-color: #FF9A4B;
   position: absolute;
+  top: 0;
+  left: 0;
   color: #FFF;
 }
 
 .image {
   height: 150px;
-  margin: 10px;
   background-position: bottom;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
 .image-left {
@@ -59,4 +63,22 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #AAA;
+}
+
+@media screen and (max-width:768px) {
+  main {
+    display: block;
+    width:100%;
+  }
+  
+  .main-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .main-center {
+    margin: 20px auto;
+  }
+  
+  
 }
